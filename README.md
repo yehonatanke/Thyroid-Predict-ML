@@ -22,11 +22,11 @@
 5. [Data Analysis (data_analysis.py)](#data-analysis-dataanalysispy)
 6. [Data Visualization (data_visualization.py)](#data-visualization-datavisualizationpy)
 7. [Main Script (main.py)](#main-script-mainpy)
-    - [Libraries](#libraries)
-8. [How to Run](#how-to-run)
-9. [Contributions](#contributions)
-10. [License](#license)
-11. [Conclusion](#conclusion)
+8. [Libraries](#libraries)
+9. [How to Run](#how-to-run)
+10. [Contributions](#contributions)
+11. [License](#license)
+12. [Conclusion](#conclusion)
 
 ## Overview
 This repository is part of a research initiative designed to leverage machine learning techniques for predicting thyroid gland activity. By analyzing clinical data, the project aims to classify thyroid conditions into hyperthyroidism, hypothyroidism, or normal functioning (euthyroid), thereby assisting in the early diagnosis and treatment of thyroid disorders.
@@ -117,7 +117,7 @@ Data visualization is crucial for interpreting the data’s underlying patterns 
 ## Main Script (main.py)
 The main.py script integrates all the stages from data preparation to visualization, ensuring a seamless workflow from raw data to actionable insights.
 
-### Libraries
+## Libraries
 This project requires the following Python libraries:
 - `pandas` and `numpy` for data manipulation.
 - `matplotlib` and `seaborn` for data visualization.
