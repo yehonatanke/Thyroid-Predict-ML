@@ -1,7 +1,34 @@
+<div align="center">
+  <img src="https://img.shields.io/badge/language-Python-%233776AB.svg?logo=python">
+  <img src="https://img.shields.io/badge/uses-Machine%20Learning-%232A2F3D.svg">
+  <img src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law">
+</div>
+
+
 # <p align="center"> Thyroid Activity Classification and Prediction <br> Using Machine Learning </p>
 
+## Table of Contents
 
-## Project Overview
+1. [Overview](#overview)
+2. [Introduction](#introduction)
+    - [Dataset](#dataset)
+    - [Methodological Framework](#methodological-framework)
+        - [Data Preprocessing](#data-preprocessing)
+3. [Research Objective](#research-objective)
+4. [Repository Structure](#repository-structure)
+    - [Process Overview](#process-overview)
+        - [Classify Thyroid Conditions](#classify-thyroid-conditions)
+        - [Discretization Visualizations](#discretization-visualizations)
+5. [Data Analysis (data_analysis.py)](#data-analysis-dataanalysispy)
+6. [Data Visualization (data_visualization.py)](#data-visualization-datavisualizationpy)
+7. [Main Script (main.py)](#main-script-mainpy)
+    - [Libraries](#libraries)
+8. [How to Run](#how-to-run)
+9. [Contributions](#contributions)
+10. [License](#license)
+11. [Conclusion](#conclusion)
+
+## Overview
 This repository is part of a research initiative designed to leverage machine learning techniques for predicting thyroid gland activity. By analyzing clinical data, the project aims to classify thyroid conditions into hyperthyroidism, hypothyroidism, or normal functioning (euthyroid), thereby assisting in the early diagnosis and treatment of thyroid disorders.
 
 ## Introduction
@@ -74,10 +101,10 @@ The main role of the script is to analyze, understand and locate problems in the
 
 </div>
 
-## Data Visualization (data_visualization.js)
+## Data Visualization (data_visualization.py)
 Data visualization is crucial for interpreting the data’s underlying patterns and the model's performance. This script generates:
 - Plots that display the distribution of data points.
-- Charts that illustrate the accuracy and effectiveness of the data preperation.
+- Charts that illustrate the accuracy and effectiveness of the data preparation.
 
 <div style="display: flex; justify-content: center;">
 
@@ -89,6 +116,13 @@ Data visualization is crucial for interpreting the data’s underlying patterns 
 
 ## Main Script (main.py)
 The main.py script integrates all the stages from data preparation to visualization, ensuring a seamless workflow from raw data to actionable insights.
+
+### Libraries
+This project requires the following Python libraries:
+- `pandas` and `numpy` for data manipulation.
+- `matplotlib` and `seaborn` for data visualization.
+- `scikit-learn` for machine learning models and evaluations.
+- `tensorflow.keras` for building neural network models.
 
 ## How to Run
 To run this project, ensure you have Python installed and execute the following command:
