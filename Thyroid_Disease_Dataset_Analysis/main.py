@@ -4,6 +4,8 @@ from data_processing import load_data, preprocess_data, open_data, preprocess_cs
 from data_analysis import analyze_data, calculate_statistics, age_analysis
 from data_visualization import visualize_data, plot_missing_data, plot_discretization, plot_data_distribution, \
     plot_non_numeric_distribution
+from models import train_model, evaluate_model, visualize_tree, train_and_evaluate_models
+import numpy as np
 
 
 def main():
@@ -57,7 +59,8 @@ def main():
         "classify_conditions": False,
         "save_classified_df": False,
         "remove_s_and_r": False,
-        "edit_file": True
+        "edit_file": True,
+        "activate_model": False
     }
     # Load data
     original_data = open_data(dataset_path)
@@ -168,6 +171,19 @@ def main():
                                }
 
         preprocess_csv(input_file, output_file, columns_to_remove, column_name_mapping)
+
+        if ["activate_model"]:
+            target_column = 'diagnosis'
+
+            if data is not None:
+                for model_type in ['CART', 'C4.5']:
+                    model, X_test, y_test, y_pred = train_model(data, target_column, model_type=model_type)
+                    if model is not None:
+                        evaluate_model(y_test, y_pred)
+                        visualize_tree(model, X_test.columns, np.unique(y_test).astype(str))
+
+                X, y = preprocess_data(data, target_column)
+                train_and_evaluate_models(X, y)
 
 
 if __name__ == "__main__":
