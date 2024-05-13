@@ -186,7 +186,7 @@ Users can customize the workflow according to their specific requirements by tog
 Contributions to this project are welcome. You can contribute by improving the scripts, adding new models, or enhancing the visualization techniques.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/LICENSE) file for details.
+This project is licensed under the [MIT License](https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/LICENSE).
 
 ## Conclusion
 
