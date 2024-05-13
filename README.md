@@ -1,4 +1,4 @@
-# <p align="center"> Thyroid Activity Classification and Prediction <br> Using Data Mining Techniques </p>
+# <p align="center"> Thyroid Activity Classification and Prediction <br> Using Machine Learning </p>
 
 
 ## Project Overview
