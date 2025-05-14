@@ -1,7 +1,6 @@
 <div align="center">
   <img src="https://img.shields.io/badge/language-Python-%233776AB.svg?logo=python">
   <img src="https://img.shields.io/badge/uses-Machine%20Learning-%232A2F3D.svg">
-  <img src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law">
 </div>
 
 
@@ -25,7 +24,6 @@
 8. [Libraries](#libraries)
 9. [How to Run](#how-to-run)
 10. [Contributions](#contributions)
-11. [License](#license)
 12. [Conclusion](#conclusion)
 
 ## Overview
@@ -184,9 +182,6 @@ Users can customize the workflow according to their specific requirements by tog
 
 ## Contributions
 Contributions to this project are welcome. You can contribute by improving the scripts, adding new models, or enhancing the visualization techniques.
-
-## License
-This project is licensed under the [MIT License](https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/LICENSE).
 
 ## Conclusion
 
