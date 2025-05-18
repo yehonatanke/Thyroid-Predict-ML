@@ -3,28 +3,9 @@
   <img src="https://img.shields.io/badge/uses-Machine%20Learning-%232A2F3D.svg">
 </div>
 
-
 # <p align="center"> Thyroid Activity Classification and Prediction <br> Using Machine Learning </p>
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Introduction](#introduction)
-    - [Dataset](#dataset)
-    - [Methodological Framework](#methodological-framework)
-        - [Data Preprocessing](#data-preprocessing)
-3. [Research Objective](#research-objective)
-4. [Repository Structure](#repository-structure)
-    - [Process Overview](#process-overview)
-        - [Classify Thyroid Conditions](#classify-thyroid-conditions)
-        - [Discretization Visualizations](#discretization-visualizations)
-5. [Data Analysis (data_analysis.py)](#data-analysis-dataanalysispy)
-6. [Data Visualization (data_visualization.py)](#data-visualization-datavisualizationpy)
-7. [Main Script (main.py)](#main-script-mainpy)
-8. [Libraries](#libraries)
-9. [How to Run](#how-to-run)
-10. [Contributions](#contributions)
-12. [Conclusion](#conclusion)
+[Results Overview](#results-overview)
 
 ## Overview
 This repository is part of a research initiative designed to leverage machine learning techniques for predicting thyroid gland activity. By analyzing clinical data, the project aims to classify thyroid conditions into hyperthyroidism, hypothyroidism, or normal functioning (euthyroid), thereby assisting in the early diagnosis and treatment of thyroid disorders.
@@ -40,7 +21,6 @@ The analysis utilized a dataset comprising 9,172 instances, each encoded with 30
 #### Data Preprocessing
 - **Cleaning**: Removal of outliers and imputation of missing values to preserve data integrity.
 - **Transformation**: Normalization and discretization techniques were applied to standardize the range of continuous variables and categorize them for effective analysis.
-
 
 ## Research Objective
 The primary goal of this project is to develop predictive models that can accurately determine the activity of the thyroid gland based on clinical parameters. Utilizing decision tree algorithms, such as CART and C4.5, the project seeks to establish robust models that not only predict but also offer insights into the factors influencing thyroid conditions.
@@ -65,15 +45,14 @@ The data preparation script is crucial for ensuring the quality and usability of
 - **Feature Engineering**: Transforming data through normalization and discretization to enhance model performance and interpretability.
 
 #### Classify Thyroid Conditions
-This visualization depicts the distribution of different thyroid conditions in the dataset. Understanding these distributions is crucial for building accurate predictive models and gaining insights into thyroid disorders.
+This describes the distribution of different thyroid conditions in the dataset.
 
 <div style="display: flex; justify-content: center;">
     <img src="https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/data%20visualization/classify_thyroid_conditions.png" alt="classify thyroid conditions" width="300px" height="200px" style="margin-right: 10px;">
 </div>
 
-
-#### Discretization Visualizations
-These visualizations illustrate the process of discretizing continuous variables, such as Free Thyroxine Index (FTI), Total T4 (TT4), and Thyroid Stimulating Hormone (TSH). Discretization helps in categorizing continuous variables into meaningful intervals, facilitating better analysis and interpretation of thyroid function.
+#### Discretization 
+This illustrate the process of discretizing continuous variables, such as Free Thyroxine Index (FTI), Total T4 (TT4), and Thyroid Stimulating Hormone (TSH). 
 
 <div style="display: flex; justify-content: center;">
 <img src="https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/data%20visualization/discretization_visualization/FTI.png" alt="Missing Data" width="300px" height="200px" style="margin-right: 10px;">
@@ -85,11 +64,8 @@ These visualizations illustrate the process of discretizing continuous variables
 <img src="https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/data%20visualization/discretization_visualization/age.png" alt="Missing Data" width="300px" height="200px" style="margin-right: 10px;">
 </div>
 
-## Data Analysis (data_analysis.py)
-The main role of the script is to analyze, understand and locate problems in the data at the initial stage. Among other things, the actions of the script are:
-- **Display various statistics**
-- **Locate missing data**
-- **Handle Missing Data:** Edit, if necessary, the missing information (delete, replace with average/median values, etc. according to the user's request)
+#### Data Analysis
+The main role of the script is to analyze, understand and locate problems in the data at the initial stage. 
 
 <div style="display: flex; justify-content: center;">
 
@@ -99,10 +75,8 @@ The main role of the script is to analyze, understand and locate problems in the
 
 </div>
 
-## Data Visualization (data_visualization.py)
-Data visualization is crucial for interpreting the data’s underlying patterns and the model's performance. This script generates:
-- Plots that display the distribution of data points.
-- Charts that illustrate the accuracy and effectiveness of the data preparation.
+#### Data Visualization
+This module is responsible for data visualization to interpret the underlying patterns of the data and model performance. We want to understand the distribution of the data and produce charts that illustrate the accuracy and efficiency of the data preparation.
 
 <div style="display: flex; justify-content: center;">
 
@@ -110,39 +84,6 @@ Data visualization is crucial for interpreting the data’s underlying patterns 
 <img src="https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/data%20visualization/Age%20Distribution%20by%20Gender%20(Frequency).png" alt="Age Distribution by Gender 2" width="400px" style="margin-right: 10px;">
 <img src="https://github.com/yehonatanke/Thyroid-Predict-ML/blob/main/data%20visualization/discretization_visualization/facet_age.png" alt="Age Distribution 3" width="700px" style="margin-right: 10px;">
 </div>
-
-
-## Main Script (main.py)
-The main.py script integrates all the stages from data preparation to visualization, ensuring a seamless workflow from raw data to actionable insights.
-
-## Libraries
-This project requires the following Python libraries:
-- `pandas` and `numpy` for data manipulation.
-- `matplotlib` and `seaborn` for data visualization.
-- `scikit-learn` for machine learning models and evaluations.
-- `tensorflow.keras` for building neural network models.
-
-## How to Run
-
-1. **Clone the Repository**: Begin by cloning or downloading the repository containing the program files to your local machine.
-
-2. **Install Dependencies**: Ensure you have all the necessary dependencies installed. You may need to install packages such as pandas, matplotlib, and numpy if you haven't already. You can typically install these dependencies using pip:
-
-    ```bash
-    pip install pandas matplotlib numpy scikit-learn tensorflow
-    ```
-
-3. **Set Up Data**: Place your dataset in a location accessible to the program. Update the `dataset_path` variable in the `main()` function to point to the location of your dataset.
-
-4. **Define Workflow**: Customize the workflow dictionary in the `main()` function to specify which tasks you want to execute. Set the value of each key to `True` or `False` based on your requirements.
-
-5. **Execute the Program**: Run the `main()` function to start the program. Depending on the tasks enabled in the workflow, the program will process, analyze, and visualize the data accordingly.
-
-6. **Review Results**: Once the program completes execution, review the results generated by each enabled task. This may include plots, statistics, preprocessed data, analysis insights, and any edited files.
-
-7. **Adjust Workflow**: If necessary, modify the workflow settings or edit the code to suit your specific needs. You can rerun the program with different configurations as needed.
-
-8. **Repeat as Needed**: You can run the program multiple times with different datasets or configurations to analyze various datasets or perform different tasks.
 
 #### Workflow Explanation
 
@@ -180,6 +121,67 @@ The program follows a structured workflow to process, analyze, and visualize dat
 
 Users can customize the workflow according to their specific requirements by toggling the tasks on or off.
 
-## Conclusion
+## <p align="center"> Results Overview </p>
 
-This research contributes to the field of medical informatics by demonstrating the application of machine learning in diagnosing and understanding thyroid disorders. Through detailed data analysis and the application of decision trees, the project provides a methodological framework for further research and development in the area of thyroid health diagnostics.
+### Project Overview
+This project focused on developing and evaluating machine learning models to classify thyroid gland activity, particularly identifying states of overactivity (hyperthyroidism) and underactivity (hypothyroidism) compared to normal gland function. Using a dataset processed and cleaned from the initial 5,984 instances with 22 attributes related to thyroid function, we applied two decision tree algorithms: CART (Classification and Regression Trees) and C4.5.
+
+### Methodology
+The methods chosen were CART and C4.5 due to their robustness in handling both categorical and continuous data, as well as their ability to generate comprehensible models. CART utilizes the Gini index to optimize splits, aiming for the highest homogeneity within nodes, while C4.5 uses information gain based on entropy, which considers both the purity of the node and the intrinsic information of a split, and includes a pruning step to reduce overfitting.
+
+### Note
+Both models were subjected to 10-fold cross-validation to ensure that the evaluation was robust and the model generalizable.
+
+### Analyses Results
+
+#### CART Results
+- **Tree Complexity**: The CART tree has 37 leaf nodes and a total size of 73.
+- **Performance Metrics**:
+  - **Accuracy**: 89.8563% of instances correctly classified.
+  - **Kappa Statistic**: 0.5455, indicating moderate agreement.
+  - **ROC Area**: Overall ROC Area values are decent, indicating good classification ability across the classes.
+  - **Class-Specific Performance**:
+    - **Healthy**: High true positive rate (TPR) and precision, suggesting effective identification.
+    - **Hyperthyroid**: Low recall but reasonable precision, indicating struggles with identifying all hyperthyroid cases but reliability when it does.
+    - **Hypothyroid**: Good recall, showing effectiveness in identifying most hypothyroid cases, though with some errors.
+    
+#### C4.5 Results
+- **Tree Complexity**: The C4.5 tree has 67 leaves and a total size of 106.
+- **Performance Metrics**:
+  - **Accuracy**: 90.2741% of instances correctly classified.
+  - **Kappa Statistic**: 0.5801, which is slightly better than CART, suggesting a moderate to good agreement.
+  - **ROC Area**: Slightly better than CART, especially in distinguishing between classes, which could indicate a more nuanced decision-making process.
+  - **Class-Specific Performance**:
+    - **Healthy**: Very similar performance to CART, strong in identifying healthy cases.
+    - **Hyperthyroid**: Better recall than CART, suggesting improvements in identifying hyperthyroid cases.
+    - **Hypothyroid**: Comparable recall to CART, maintaining good identification rates.
+
+### Estimation of the Degree of Accuracy of Each Method
+
+The accuracy of each method as computed during the analysis:
+- **CART**: 89.8563%
+- **C4.5**: 90.2741%
+
+The slight advantage in accuracy by C4.5 can be attributed to its sophisticated handling of attribute selection and pruning which tends to avoid overfitting better than CART.
+
+### Comparative Analysis and Conclusions
+
+#### Comparative Analysis
+- **Accuracy**: C4.5 slightly outperforms CART in overall accuracy and kappa statistic, indicating a better balance between sensitivity and specificity.
+- **Complexity**: C4.5 has a larger tree, which might suggest a more complex model than CART. This complexity could be a factor in its slightly better performance but might also indicate a higher risk of overfitting despite the pruning process.
+- **ROC and Precision-Recall (PRC) Areas**: C4.5 shows better ROC and PRC areas, suggesting it is more capable of distinguishing between the classes than CART.
+
+### Conclusions
+Both algorithms performed admirably with overall accuracies close to 90%, indicating strong predictive capabilities. C4.5 slightly outperformed CART in terms of accuracy and the kappa statistic, suggesting better consistency and reliability, likely due to its pruning mechanism which effectively reduces the complexity of the model and helps mitigate overfitting.
+
+### Comparison with Existing Research
+The classification of thyroid disorders using machine learning is well-documented in the literature, with various studies highlighting the potential of algorithms like decision trees due to their interpretability and effectiveness. Studies often emphasize the importance of feature selection and data quality, which were critical aspects of our project as well.
+
+Our results align with these findings, demonstrating that decision trees can effectively distinguish between different states of thyroid activity, with performance metrics that are competitive with current standards. Furthermore, the relative success of C4.5 in this project corroborates research suggesting that methods which account for both the quality of splits and the complexity of the model (through mechanisms like pruning) tend to perform better, especially in datasets with a mix of attribute types and a substantial number of instances.
+
+### Conclusion and Recommendations
+The project confirms the applicability of decision tree models for the classification of thyroid gland activity. Given the slightly superior performance of C4.5, it is recommended for similar tasks in clinical settings where interpretability and accuracy are crucial. However, future work could explore the following to further enhance model performance and application:
+
+- **Feature Engineering**: More sophisticated feature engineering might uncover relationships that are not immediately apparent but could significantly enhance model accuracy.
+- **Ensemble Methods**: Combining multiple models in an ensemble method, such as Random Forests or boosting techniques, could provide improvements in predictive performance and robustness.
+- **Advanced Algorithms**: Investigating other advanced machine learning algorithms that can handle complex interactions and non-linear relationships may also prove beneficial.
