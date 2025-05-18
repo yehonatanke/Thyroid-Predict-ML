@@ -178,10 +178,7 @@ The program follows a structured workflow to process, analyze, and visualize dat
 9. **File Editing**:
     - *Edit File*: Edits data files by removing specified columns and renaming columns if enabled.
 
-Users can customize the workflow according to their specific requirements by toggling the tasks on or off. This modular approach allows for flexibility in data processing and analysis.
-
-## Contributions
-Contributions to this project are welcome. You can contribute by improving the scripts, adding new models, or enhancing the visualization techniques.
+Users can customize the workflow according to their specific requirements by toggling the tasks on or off.
 
 ## Conclusion
 
